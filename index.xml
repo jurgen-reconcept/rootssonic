@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jonathan Rhodes</title>
-    <link>https://jonathanrhodes.nl/</link>
-    <description>Recent content on Jonathan Rhodes</description>
+    <title>RiemerSonic</title>
+    <link>https://jurgen-reconcept.github.io/rootssonic/</link>
+    <description>Recent content on RiemerSonic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jonathanrhodes.nl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jurgen-reconcept.github.io/rootssonic/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

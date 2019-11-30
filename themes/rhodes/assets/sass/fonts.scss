@@ -1,0 +1,7 @@
+// Delicious-SmallCaps.woff
+@font-face {
+    font-family: 'Delicious-SmallCaps';
+    // this url is relative to this source file, but refering to where the font file will be
+    // after compile (which is at <host>/fonts
+    src: url('../fonts/Delicious-SmallCaps.woff') format('woff'), /* Modern browsers */
+}

@@ -93,7 +93,6 @@ a {
   display: none !important; }
 
 .image-container {
-  background: url("/bg.png");
   background-position: center;
   background-size: cover;
   height: 150px;
@@ -131,7 +130,7 @@ a {
         animation-fill-mode: both; }
   .fold .image-container {
     height: 100%;
-    background-image: url("/ThemDirtyDimes.png");
+    background-image: url("../ThemDirtyDimes.png");
     background-position: top; }
 
 .artist {

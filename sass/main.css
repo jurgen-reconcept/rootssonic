@@ -117,20 +117,20 @@ a {
     left: 0;
     top: 0; }
     .fold .section-logo .logo-container {
-      background: rgba(25, 19, 15, 0.7);
       padding: 25px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
       .fold .section-logo .logo-container img.logo {
-        width: 200px;
+        width: 400px;
         opacity: 0;
         animation: fade-in 2s;
         animation-fill-mode: both; }
   .fold .image-container {
     height: 100%;
     background-image: url("../ThemDirtyDimes.png");
+    opacity: .3;
     background-position: top; }
 
 .artist {

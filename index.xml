@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RiemerSonic</title>
-    <link>https://jurgen-reconcept.github.io/rootssonic/</link>
-    <description>Recent content on RiemerSonic</description>
+    <title>RootsSonic</title>
+    <link>https://rootssonic.nl/</link>
+    <description>Recent content on RootsSonic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jurgen-reconcept.github.io/rootssonic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rootssonic.nl/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

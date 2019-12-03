@@ -168,7 +168,7 @@ a {
 
         .logo-container {
 
-            background: rgba($col-bg, .7);
+            // background: rgba($col-bg, .7);
             padding: 25px;
             display: flex;
             flex-direction: column;
@@ -176,7 +176,7 @@ a {
             justify-content: center;
 
             img.logo {
-                width: 200px;
+                width: 400px;
                 opacity: 0;
                 animation: fade-in 2s;
                 animation-fill-mode: both;
@@ -188,6 +188,7 @@ a {
     .image-container {
         height: 100%;
         background-image: url('../ThemDirtyDimes.png');
+        opacity: .3;
         background-position: top;
     }
 

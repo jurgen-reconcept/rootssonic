@@ -90,7 +90,6 @@ h2 {
 
 h3 {
     text-align: center;
-    opacity: .7;
     font-size: 1.5em;
     font-weight: normal;
     margin-top: 0;
@@ -105,7 +104,11 @@ p {
 }
 
 .muted {
-    opacity: .4;
+    opacity: .7;
+}
+
+.accent {
+    color: $col-brand;
 }
 
 .secondary {
@@ -152,7 +155,7 @@ a {
 .fold {
 
     position: relative;
-    height: 500px;
+    height: 600px;
 
     .section-logo {
 
@@ -165,6 +168,19 @@ a {
         height: 100%;
         left: 0;
         top: 0;
+
+        .logo-riemer-container {
+
+            // background: rgba($col-bg, .7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img.logo-riemer {
+                width: 56px;
+            }
+        }
 
         .logo-container {
 

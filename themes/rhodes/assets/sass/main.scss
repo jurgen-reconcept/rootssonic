@@ -75,6 +75,44 @@ body {
     }
 }
 
+
+
+.youtube-container {
+  padding: 2px;
+  background: $col-brand;
+  margin: 0 auto;
+
+  $w: 300px;
+  width: $w;
+  max-width: $w;
+  height: $w*9/16;
+
+
+  @media only screen and (max-width: 1000px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    width: 100% !important;
+  }
+
+  &.large {
+    $w: 400px;
+    width: $w;
+    max-width: $w;
+    height: $w*9/16;
+  }
+
+  &.huge {
+    $w: 900px;
+    width: $w;
+    max-width: $w;
+    height: $w*9/16;
+    margin: 0 auto;
+  }
+}
+
 h1 {
     text-align: center;
     font-size: 3em;

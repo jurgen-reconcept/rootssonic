@@ -1,81 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
-@import './fonts.scss';
+@import "./fonts.scss";
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-$col-bg: #19130F;
+$col-bg: #19130f;
 $col-text-primary: white;
-$col-text-secondary: #9D754F;
-$col-brand: #EB8B2D;
-$col-hover: #E6691B;
+$col-text-secondary: #9d754f;
+$col-brand: #eb8b2d;
+$col-hover: #e6691b;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Delicious-SmallCaps', serif;
-    font-size: 15px;
-    font-weight: lighter;
-    color: $col-text-primary;
-    background: $col-bg;
+  margin: 0;
+  font-family: "Delicious-SmallCaps", serif;
+  font-size: 18px;
+  font-weight: lighter;
+  color: $col-text-primary;
+  background: $col-bg;
 }
 
 .container {
+  margin: 0 auto;
+  // width: 80%;
+  max-width: 1200px;
+
+  &.container-live {
+    // background: black;
+    width: 100%;
     margin: 0 auto;
-    // width: 80%;
-    max-width: 1200px;
+  }
 
-    &.container-live {
-        // background: black;
-        width: 100%;
-        margin: 0 auto;
-    }
+  .nav {
+    display: flex;
+    padding: 30px;
 
-    .nav {
-        display: flex;
-        padding: 30px;
+    .nav-item {
+      flex: 1;
+      text-align: center;
 
-        .nav-item {
-            flex: 1;
-            text-align: center;
+      .nav-link {
+        color: black;
+        font-size: 24px;
+        // font-family: 'Covered By Your Grace';
+        text-decoration: none;
+        transition: border-bottom-color 0.3s;
+        border-bottom: 2px solid transparent;
 
-            .nav-link {
-                color: black;
-                font-size: 24px;
-                // font-family: 'Covered By Your Grace';
-                text-decoration: none;
-                transition: border-bottom-color .3s;
-                border-bottom: 2px solid transparent;
-
-                &.active, &:hover {
-                    border-bottom: 2px solid $col-brand;
-                }
-            }
+        &.active,
+        &:hover {
+          border-bottom: 2px solid $col-brand;
         }
+      }
     }
+  }
 
-    section {
-        margin-bottom: 100px;
+  section {
+    margin-bottom: 100px;
 
-        .section-title {
-            text-align: center;
-            color: $col-text-primary;
-            font-size: 36px;
-            padding: 30px;
-            padding-top: 0;
-        }
+    .section-title {
+      text-align: center;
+      color: $col-text-primary;
+      font-size: 36px;
+      padding: 30px;
+      padding-top: 0;
     }
+  }
 }
-
-
 
 .youtube-container {
   padding: 2px;
@@ -85,8 +84,7 @@ body {
   $w: 300px;
   width: $w;
   max-width: $w;
-  height: $w*9/16;
-
+  height: $w * 9/16;
 
   @media only screen and (max-width: 1000px) {
     margin-left: auto;
@@ -101,198 +99,202 @@ body {
     $w: 400px;
     width: $w;
     max-width: $w;
-    height: $w*9/16;
+    height: $w * 9/16;
   }
 
   &.huge {
     $w: 900px;
     width: $w;
     max-width: $w;
-    height: $w*9/16;
+    height: $w * 9/16;
     margin: 0 auto;
   }
 }
 
 h1 {
-    text-align: center;
-    font-size: 3em;
-    font-weight: normal;
+  text-align: center;
+  font-size: 3em;
+  font-weight: normal;
 }
 
 h2 {
-    text-align: center;
-    font-size: 2.8em;
-    font-weight: normal;
-    margin-bottom: .5em;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
 }
 
 h3 {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: normal;
-    margin-top: 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 0;
 }
 
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .muted {
-    opacity: .7;
+  opacity: 0.7;
 }
 
 .accent {
-    color: $col-brand;
+  color: $col-brand;
 }
 
 .secondary {
-    color: $col-text-secondary !important; 
+  color: $col-text-secondary !important;
 }
 
 a {
-    color: $col-brand;
-    transition: color .4s;
-    text-decoration: none;
+  color: $col-brand;
+  transition: color 0.4s;
+  text-decoration: none;
 
-    &:hover {
-        color: $col-hover;
-    }
+  &:hover {
+    color: $col-hover;
+  }
 
-    &.icon {
-        font-size: 30px;
-        margin: 10px;
-    }
+  &.icon {
+    font-size: 30px;
+    margin: 10px;
+  }
 }
 
 // bandsintown
-.bit-top-track-button, .bit-nav-bar-container {
-    display: none !important;
+.bit-top-track-button,
+.bit-nav-bar-container {
+  display: none !important;
 }
 
 .image-container {
-    // background: url('../../../bg.png');
-    background-position: center;
-    // background-attachment: fixed;
-    background-size: cover;
-    height: 150px;
+  // background: url('../../../bg.png');
+  background-position: center;
+  // background-attachment: fixed;
+  background-size: cover;
+  height: 150px;
 
-    &.big {
-        height: 500px;
-    }
+  &.big {
+    height: 500px;
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .fold {
+  position: relative;
+  height: 600px;
 
-    position: relative;
-    height: 600px;
+  .section-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; //flex-end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
 
-    .section-logo {
+    .logo-riemer-container {
+      // background: rgba($col-bg, .7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; //flex-end;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-
-        .logo-riemer-container {
-
-            // background: rgba($col-bg, .7);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            img.logo-riemer {
-                width: 56px;
-            }
-        }
-
-        .logo-container {
-
-            // background: rgba($col-bg, .7);
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            img.logo {
-                width: 400px;
-                opacity: 0;
-                animation: fade-in 2s;
-                animation-fill-mode: both;
-            }
-        }
-        
+      img.logo-riemer {
+        width: 56px;
+      }
     }
 
-    .image-container {
-        height: 100%;
-        background-image: url('../ThemDirtyDimes.png');
-        opacity: .3;
-        background-position: top;
-    }
+    .logo-container {
+      // background: rgba($col-bg, .7);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
+      img.logo {
+        width: 400px;
+        opacity: 0;
+        animation: fade-in 2s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+
+  .image-container {
+    height: 100%;
+    background-image: url("../bg.jpeg");
+    opacity: 0.3;
+    background-position: top;
+  }
 }
 
 .artist {
-    text-align: center;
-    margin-bottom: 70px;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
-.video-container{
-    position:relative;
-    width:100%;
-    height:0;
-    padding-bottom:56.27198%;
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.27198%;
 }
 
-.video-container iframe{
-    border: none;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+.video-container iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 img.photo {
-    width: 50%;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    float: right;
-
-    @media only screen and (max-width: 900px) {
-        margin-left: 0;
-        width: 100%;
-        float: none;
-    }
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
 }
 
 .clearfix::after {
-    clear: both;
-    display: block;
-    content: '';
+  clear: both;
+  display: block;
+  content: "";
 }
 
 // fontawesome icons
 .inline-svg {
-    display: inline-block;
-    height: 1.15rem;
-    width: 1.15rem;
-    top: 0.15rem;
-    position: relative;
+  display: inline-block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: 0.15rem;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .col {
+    flex: 1 1 auto;
+    padding: 20px;
+  }
 }

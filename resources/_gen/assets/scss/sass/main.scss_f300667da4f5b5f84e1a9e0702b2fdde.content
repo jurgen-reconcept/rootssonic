@@ -22,7 +22,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1200px;
+  padding: 20px; }
   .container.container-live {
     width: 100%;
     margin: 0 auto; }
@@ -151,13 +152,12 @@ a {
       .fold .section-logo .logo-riemer-container img.logo-riemer {
         width: 56px; }
     .fold .section-logo .logo-container {
-      padding: 25px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
       .fold .section-logo .logo-container img.logo {
-        width: 400px;
+        max-width: 400px;
         opacity: 0;
         animation: fade-in 2s;
         animation-fill-mode: both; }
@@ -186,7 +186,7 @@ a {
   height: 100%; }
 
 img.photo {
-  max-width: 400px;
+  max-width: 320px;
   max-height: 400px;
   margin: 0 auto; }
 

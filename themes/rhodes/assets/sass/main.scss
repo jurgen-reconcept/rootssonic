@@ -32,6 +32,7 @@ body {
   margin: 0 auto;
   // width: 80%;
   max-width: 1200px;
+  padding: 20px;
 
   &.container-live {
     // background: black;
@@ -218,14 +219,14 @@ a {
 
     .logo-container {
       // background: rgba($col-bg, .7);
-      padding: 25px;
+      // padding: 25px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
       img.logo {
-        width: 400px;
+        max-width: 400px;
         opacity: 0;
         animation: fade-in 2s;
         animation-fill-mode: both;
@@ -263,7 +264,7 @@ a {
 }
 
 img.photo {
-  max-width: 400px;
+  max-width: 320px;
   max-height: 400px;
   margin: 0 auto;
 }
